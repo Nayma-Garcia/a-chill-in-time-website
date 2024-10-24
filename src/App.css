@@ -1,79 +1,143 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
 .App {
-  text-align: left;
+  text-align: center;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 5rem;
+  margin-top: 0;
+  color: white;
 }
 
 .navbar {
-  background-color: #222;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 15px;
 }
 
 .navbar ul {
+  display: flex;
+  justify-content: center;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .navbar li {
-  display: inline;
-  margin-right: 20px;
+  margin: 0 20px;
 }
 
-.navbar li a {
-  color: #fff;
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+/* Section Styles */
+.about-section,
+.devlog-section,
+.contact-section {
+  padding: 50px;
+  border-top: 1px solid gray;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Ensure sections are initially hidden until scrolled */
+.about-section, .devlog-section, .contact-section {
+  min-height: 100vh;
+}
+
+/* Devlog Styles */
+.devlog-section {
+  padding-top: 2rem;
+}
+
+.devlog-card {
+  background-color: #333;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid #444;
+}
+
+.devlog-date {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5bc0de; /* Light blue */
+  margin-bottom: 10px;
+}
+
+.devlog-entries {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.devlog-entries li {
+  margin-bottom: 10px;
+}
+
+.devlog-images {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.devlog-images img {
+  width: 150px;
+  height: auto;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+/* Contact Section Styles */
+.contact-section {
+  border-top: 1px solid white;
+  margin-top: 20px;
+}
+
+.contact-info {
+  font-size: 1.2rem;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #5bc0de;
   text-decoration: none;
   font-weight: bold;
 }
 
-.navbar li a:hover {
-  color: #ff3333;
-}
-
-.title {
-  font-size: 3rem;
-  margin-top: 10px;
-  color: #fff;
-}
-
-.App-header {
-  background-color: #000;
-  min-height: 20vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.about-section, .devlog-section {
-  padding: 50px;
-  margin-top: 20px;
-}
-
-.about-section {
-  background-color: #333;
-  color: #fff;
-}
-
-.devlog-section {
-  background-color: #222;
-  color: #ddd;
-}
-
-h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.description {
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-a {
-  color: #61dafb;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ff3333;
+.contact-info a:hover {
+  text-decoration: underline;
 }
