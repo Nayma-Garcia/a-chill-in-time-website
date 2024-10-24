@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/a-chill-in-time-website/static/css/main.9126beaa.css",
-    "main.js": "/a-chill-in-time-website/static/js/main.8d408771.js",
+    "main.css": "/a-chill-in-time-website/static/css/main.39c625cf.css",
+    "main.js": "/a-chill-in-time-website/static/js/main.ded627bc.js",
     "static/js/453.3c18f808.chunk.js": "/a-chill-in-time-website/static/js/453.3c18f808.chunk.js",
     "index.html": "/a-chill-in-time-website/index.html",
-    "main.9126beaa.css.map": "/a-chill-in-time-website/static/css/main.9126beaa.css.map",
-    "main.8d408771.js.map": "/a-chill-in-time-website/static/js/main.8d408771.js.map",
+    "main.39c625cf.css.map": "/a-chill-in-time-website/static/css/main.39c625cf.css.map",
+    "main.ded627bc.js.map": "/a-chill-in-time-website/static/js/main.ded627bc.js.map",
     "453.3c18f808.chunk.js.map": "/a-chill-in-time-website/static/js/453.3c18f808.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9126beaa.css",
-    "static/js/main.8d408771.js"
+    "static/css/main.39c625cf.css",
+    "static/js/main.ded627bc.js"
   ]
 }
