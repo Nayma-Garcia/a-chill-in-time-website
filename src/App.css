@@ -1,38 +1,79 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background-color: #222;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar li a:hover {
+  color: #ff3333;
+}
+
+.title {
+  font-size: 3rem;
+  margin-top: 10px;
+  color: #fff;
 }
 
 .App-header {
-  background-color: #000000;
-  min-height: 100vh;
+  background-color: #000;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-end;
 }
 
-.App-link {
+.about-section, .devlog-section {
+  padding: 50px;
+  margin-top: 20px;
+}
+
+.about-section {
+  background-color: #333;
+  color: #fff;
+}
+
+.devlog-section {
+  background-color: #222;
+  color: #ddd;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+a {
   color: #61dafb;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover {
+  color: #ff3333;
 }
